@@ -1,6 +1,6 @@
 {
   "name": "ngx-custom-select",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Angular 5 custom multiselect dropdown component.",
   "keywords": [
     "angular 4 multiselect dropdown",
@@ -109,5 +109,8 @@
   },
   "bugs": {
     "url": ""
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
