@@ -35,7 +35,6 @@ testem.log
 Thumbs.db
 
 #Misc
-READMEcopy.md
 e2e/
 src/
 inline-resources.js
