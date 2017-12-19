@@ -50,4 +50,4 @@ tslint.json
 
 /src/*
 /src/app/*
-!ngx-custom-multiselect
+!ngx-custom-select

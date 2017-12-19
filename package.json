@@ -1,13 +1,13 @@
 {
   "name": "ngx-custom-select",
-  "version": "1.0.6",
-  "description": "Angular 5 custom multiselect dropdown component.",
+  "version": "1.0.7",
+  "description": "Angular 5 custom select dropdown component.",
   "keywords": [
-    "angular 4 multiselect dropdown",
+    "angular 4 multi select dropdown",
     "angular 5 multiselect dropdown",
     "angular 5 select dropdown",
-    "angular multiselect",
     "angular select",
+    "angular multiselect",
     "angular dropdown"
   ],
   "license": "MIT",
@@ -40,7 +40,7 @@
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint",
-    "github-pages": "ng build --base-href /ngx-custom-multiselect/"
+    "github-pages": "ng build --base-href /ngx-custom-select/"
   },
   "private": false,
   "dependencies": {

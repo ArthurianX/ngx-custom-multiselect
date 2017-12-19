@@ -25,7 +25,7 @@
     ]
   },
   "include": [
-    "ngx-custom-multiselect/**/*.ts"
+    "ngx-custom-select/**/*.ts"
   ],
   "exclude": [
     "src/**/*.spec.ts",

@@ -8,10 +8,10 @@ const pkg = JSON.parse(fs.readFileSync('./package.json').toString());
 
 export default {
   entry: {
-    'index.umd':                      './ngx-custom-multiselect/index.ts',
-    'index.umd.min':                  './ngx-custom-multiselect/index.ts',
-    'ngx-custom-multiselect.umd':     './ngx-custom-multiselect/ngx-custom-multiselect.ts',
-    'ngx-custom-multiselect.umd.min': './ngx-custom-multiselect/ngx-custom-multiselect.ts'
+    'index.umd':                      './ngx-custom-select/index.ts',
+    'index.umd.min':                  './ngx-custom-select/index.ts',
+    'ngx-custom-select.umd':     './ngx-custom-select/ngx-custom-select.ts',
+    'ngx-custom-select.umd.min': './ngx-custom-select/ngx-custom-select.ts'
   },
   output: {
     path: path.join(__dirname, 'dist'),
