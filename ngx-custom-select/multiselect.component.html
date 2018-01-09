@@ -35,14 +35,14 @@
       </div>
       <ul *ngIf="!settings.groupBy" [style.maxHeight] = "settings.maxHeight+'px'">
         <span *ngIf="itemTempl">
-            <li *ngFor="let item of data | listFilter:filter:settings.nameProperty; let i = index;" (click)="onItemClick(item,i,$event)" class="pure-checkbox">
+            <li *ngFor="let item of data | listFilter:filter:settings.nameProperty:settings.extraFilterById; let i = index;" (click)="onItemClick(item,i,$event)" class="pure-checkbox">
             <input *ngIf="settings.showCheckbox" type="checkbox" [checked]="isSelected(item)" [disabled]="settings.limitSelection == selectedItems?.length && !isSelected(item)"/>
             <label></label>
             <c-templateRenderer [data]="itemTempl" [item]="item"></c-templateRenderer>
         </li>
         </span>
         <span *ngIf="!itemTempl" >
-        <li *ngFor="let item of data | listFilter:filter:settings.nameProperty; let i = index;" (click)="onItemClick(item,i,$event)" class="pure-checkbox">
+        <li *ngFor="let item of data | listFilter:filter:settings.nameProperty:settings.extraFilterById; let i = index;" (click)="onItemClick(item,i,$event)" class="pure-checkbox">
             <input *ngIf="settings.showCheckbox" type="checkbox" [checked]="isSelected(item)" [disabled]="settings.limitSelection == selectedItems?.length && !isSelected(item)"/>
             <label>{{item[settings.nameProperty]}}</label>
         </li>
@@ -52,14 +52,14 @@
         <ul *ngFor="let obj of groupedData ; let i = index;" class="list-grp">
           <h4>{{obj.key}}</h4>
           <span *ngIf="itemTempl" >
-        <li *ngFor="let item of obj.value | listFilter:filter:settings.nameProperty; let i = index;" (click)="onItemClick(item,i,$event)" class="pure-checkbox">
+        <li *ngFor="let item of obj.value | listFilter:filter:settings.nameProperty:settings.extraFilterById; let i = index;" (click)="onItemClick(item,i,$event)" class="pure-checkbox">
             <input *ngIf="settings.showCheckbox" type="checkbox" [checked]="isSelected(item)" [disabled]="settings.limitSelection == selectedItems?.length && !isSelected(item)"/>
             <label></label>
             <c-templateRenderer [data]="itemTempl" [item]="item"></c-templateRenderer>
         </li>
         </span>
           <span *ngIf="!itemTempl" >
-        <li *ngFor="let item of obj.value | listFilter:filter:settings.nameProperty; let i = index;" (click)="onItemClick(item,i,$event)" class="pure-checkbox">
+        <li *ngFor="let item of obj.value | listFilter:filter:settings.nameProperty:settings.extraFilterById; let i = index;" (click)="onItemClick(item,i,$event)" class="pure-checkbox">
             <input *ngIf="settings.showCheckbox" type="checkbox" [checked]="isSelected(item)" [disabled]="settings.limitSelection == selectedItems?.length && !isSelected(item)"/>
             <label>{{item[settings.nameProperty]}}</label>
         </li>

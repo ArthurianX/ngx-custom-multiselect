@@ -63,6 +63,7 @@ export class NGXCustomMultiSelect implements OnInit, ControlValueAccessor, OnCha
         selectAllText: 'Select All',
         unSelectAllText: 'UnSelect All',
         enableSearchFilter: false,
+        extraFilterById: false,
         maxHeight: 300,
         badgeShowLimit: 999999999999,
         classes: '',
