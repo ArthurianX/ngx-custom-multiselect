@@ -6,7 +6,7 @@ export interface DropdownSettings {
     unSelectAllText: String;
     enableSearchFilter: Boolean;
     extraFilterById?: Boolean;
-    nameProperty?: String;
+    nameProperty?: any;
     maxHeight: Number;
     badgeShowLimit: Number;
     classes: String;

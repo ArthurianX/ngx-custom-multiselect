@@ -268,6 +268,12 @@ export class NGXCustomMultiSelect implements OnInit, ControlValueAccessor, OnCha
 
         return tempArr;
     }
+
+    clearFilter(event: Event) {
+      event.stopPropagation();
+      this.filter = new ListItem();
+      return true;
+    }
 }
 
 @NgModule({
