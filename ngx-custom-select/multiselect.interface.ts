@@ -1,10 +1,11 @@
 export interface DropdownSettings{
     singleSelection: Boolean;
     text: String;
-    enableCheckAll : Boolean;
+    enableCheckAll: Boolean;
     selectAllText: String;
     unSelectAllText: String;
     enableSearchFilter: Boolean;
+    nameProperty?: String;
     maxHeight: Number;
     badgeShowLimit: Number;
     classes: String;
@@ -13,4 +14,4 @@ export interface DropdownSettings{
     searchPlaceholderText: String;
     groupBy?: String;
     showCheckbox?: Boolean;
-} 
+}

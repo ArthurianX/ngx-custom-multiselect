@@ -267,13 +267,17 @@ $purple: #A861A6;*/
     text-align: center;
 }
 .list-grp{
-    padding: 0 15px !important;
+    padding: 0px !important;
 }
 .list-grp h4 {
     text-transform: capitalize;
     margin: 15px 0px 0px 0px;
     font-size: 14px;
     font-weight: 700;
+    background-color: #ebebeb;
+    color: #4a4a4a;
+    line-height: 30px;
+    padding: 0 15px;
 }
 .list-grp > li {
     padding-left: 15px !important;

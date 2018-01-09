@@ -59,6 +59,7 @@ export class NGXCustomMultiSelect implements OnInit, ControlValueAccessor, OnCha
         singleSelection: false,
         text: 'Select',
         enableCheckAll: true,
+        nameProperty: 'nameDisplay',
         selectAllText: 'Select All',
         unSelectAllText: 'UnSelect All',
         enableSearchFilter: false,
@@ -257,6 +258,13 @@ export class NGXCustomMultiSelect implements OnInit, ControlValueAccessor, OnCha
         Object.keys(groupedObj).map(function (x) {
             tempArr.push({ key: x, value: groupedObj[x] });
         });
+
+        tempArr.sort((a: any, b: any) => {
+          if (a.key.toUpperCase() < b.key.toUpperCase()) { return -1 };
+          if (a.key.toUpperCase() > b.key.toUpperCase()) { return 1 };
+          return 0;
+        });
+
         return tempArr;
     }
 }
