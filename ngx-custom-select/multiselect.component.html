@@ -52,7 +52,7 @@
       </ul>
       <div *ngIf="settings.groupBy" [style.maxHeight] = "settings.maxHeight+'px'" style="overflow: auto;">
         <ul *ngFor="let obj of groupedData ; let i = index;" class="list-grp">
-          <h4 *ngIf="!filter[settings.nameProperty]">{{obj.key}}</h4>
+          <h4 *ngIf="(obj.value | listFilter:filter:settings.nameProperty:settings.extraFilterById).length">{{obj.key}}</h4>
           <span *ngIf="itemTempl" >
         <li *ngFor="let item of obj.value | listFilter:filter:settings.nameProperty:settings.extraFilterById; let i = index;" (click)="onItemClick(item,i,$event)" class="pure-checkbox">
             <input *ngIf="settings.showCheckbox" type="checkbox" [checked]="isSelected(item)" [disabled]="settings.limitSelection == selectedItems?.length && !isSelected(item)"/>
